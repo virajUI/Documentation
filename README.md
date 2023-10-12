@@ -1,2 +1,1 @@
-# test1
-delete after use
+# Share doc view only
