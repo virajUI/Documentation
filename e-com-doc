@@ -1,0 +1,1109 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <style>
+      html,
+      body {
+        height: 100%;
+        margin: 0;
+        padding: 0;
+      }
+      a {
+        color: rgb(0, 81, 255);
+        text-decoration: none;
+      }
+      .sticky {
+        position: -webkit-sticky; /* Safari */
+        position: sticky;
+        top: 0;
+      }
+      h1 {
+        width: 100%;
+        color: #802c6e;
+        margin-top: 50px;
+      }
+      h2 {
+        font-size: 18px;
+        font-weight: bold;
+        color: #540440;
+      }
+      h3 {
+        font-size: 18px;
+        font-weight: bold;
+        color: #540440;
+        margin: 30px 10px 20px 40px;
+      }
+      li {
+        color: #ffffff;
+        font-weight: bold;
+        margin: 0px 20px 30px 0px;
+      }
+      a {
+        text-decoration: none;
+      }
+      .mute {
+        color: grey;
+      }
+
+      .badge-danger {
+        background-color: rgb(34, 226, 0);
+      }
+      .scrollable-col {
+        height: 100vh; /* Adjust the height as needed */
+        overflow-y: auto;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="row">
+      <div
+        class="col-md-2 sticky scrollable-col"
+        style="background: rgb(226, 244, 255)"
+      >
+    
+        <h3>Common</h3>
+
+        <ul>
+          <li>
+            <a href="#searchdomain" target="content-frame">Search Domain</a>
+          </li>
+          <li>
+            <a href="#businesslist" target="content-frame">Contact Details</a>
+          </li>
+
+          <li><a href="#banners" target="content-frame">Banners</a></li>
+
+          <li><a href="#seo" target="content-frame">SEO</a></li>
+          <li><a href="#pages" target="content-frame">Stories</a></li>
+          <li>
+            <a href="#feedback" target="content-frame">Feedback</a>
+          </li>
+        </ul>
+
+        <h3>Services</h3>
+
+        <ul>
+         
+          <li>
+            <a href="#category_details" target="content-frame">Category Wise Products </a>
+          </li>
+        </ul>
+
+        <h3>Startups</h3>
+        <ul>
+          <li><a href="#add_user" target="content-frame">Add User</a></li>
+          <li>
+            <a href="#add_role_allot" target="content-frame">Add Role Allot</a>
+          </li>
+          <li><a href="#search_user" target="content-frame">Sign Up</a></li>
+          <li><a href="#signin" target="content-frame">Sign In</a></li>
+        </ul>
+
+        <h3>Account</h3>
+        <ul>
+          <li>
+            <a href="#addresslist" target="content-frame">Address List</a>
+          </li>
+          <li>
+            <a href="#changepassword" target="content-frame">Change Password</a>
+          </li>
+          <li><a href="#addaddress" target="content-frame">Add Address</a></li>
+          <li>
+            <a href="#updateaddress" target="content-frame">Update Address</a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="col-md-7">
+        <!-- new section start -->
+        <div id="searchdomain">
+          <h5>https://testapi.arbsindia.com/public/api</h5>
+          <h1>Search Domain</h1>
+
+          <!--API URL -->
+          <span class="badge badge-danger">POST</span>
+          <span class="mute"> {{domain}}</span>
+          <span>/search-connect-domain</span>
+
+          <!-- DESCRIPTION-->
+          <p class="mute">
+            Contact Details is the list of businesses registered with us.
+          </p>
+
+          <!-- BODY-->
+          <h2>Body</h2>
+          <p class="mute">Form Data</p>
+
+          <!-- INPUT-->
+          <pre> domain_name:   </pre>
+
+          <h2>Response</h2>
+
+          <!-- DESCRIPTION-->
+          <p class="mute">
+            Creates a new resource. The body of the request should be a JSON
+            object with the resource details.
+          </p>
+
+          <!-- RESPONSE-->
+          <pre>
+            {
+              "data": {
+                  "id": ,
+                  "business_id": ,
+                  "domain": "",
+                  "request_server": ""
+              },
+              "status": ,
+              "msg": "  "
+          }
+              </pre
+          >
+        </div>
+        <!-- new section start -->
+        <div id="businesslist">
+          <h1>Contact Details</h1>
+
+          <!--API URL -->
+          <span class="badge badge-danger">POST</span>
+          <span class="mute"> {{domain}}</span>
+          <span>/get-public-business-list</span>
+
+          <!-- DESCRIPTION-->
+          <p class="mute">
+            Contact Details is the list of businesses registered with us.
+          </p>
+
+          <!-- BODY-->
+          <h2>Body</h2>
+          <p class="mute">Form Data</p>
+
+          <!-- INPUT-->
+          <pre> business_id :   </pre>
+
+          <h2>Response</h2>
+
+          <!-- DESCRIPTION-->
+          <p class="mute">
+            Creates a new resource. The body of the request should be a JSON
+            object with the resource details.
+          </p>
+
+          <!-- RESPONSE-->
+          <pre>
+                {
+                    "data": [
+                        {
+                            "id": ,
+                            "created_by": ,
+                            "name": "",
+                            "owner": "",
+                            "email": "",
+                            "phone": "",
+                            "address": "",
+                            "state_id": "",
+                            "state_name": "",
+                            "country_id": "",
+                            "country_name": "",
+                            "city": "",
+                            "pincode": "",
+                            "gst_registration": "",
+                            "gst_number": "",
+                            "image": "",
+                            "industry_id": ,
+                            "industry_name": ,
+                            "bill_template": ""
+                        }
+                    ],
+                    "status": true,
+                    "msg": "list available"
+                }
+              </pre
+          >
+        </div>
+        <!-- new section start -->
+
+        <!-- new section start -->
+        <div id="add_user">
+          <h1>Add User</h1>
+
+          <!--API URL -->
+          <span class="badge badge-danger">POST</span>
+          <span class="mute"> {{domain}}</span>
+          <span>/public-add-user</span>
+
+          <!-- BODY-->
+          <h2>Body</h2>
+          <p class="mute">Form Data</p>
+
+          <!-- INPUT-->
+          <pre>
+            first_name:
+            last_name: 
+            email:
+            phone:
+            date_of_birth:YY-MM-DD
+            password:
+            password_confirmation:
+            user_type:
+            business_id:
+            salary_id:
+            attendance_id:   </pre
+          >
+
+          <h2>Response</h2>
+
+          <!-- DESCRIPTION-->
+          <p class="mute">
+            Creates a new resource. The body of the request should be a JSON
+            object with the resource details.
+          </p>
+
+          <!-- RESPONSE-->
+          <pre>
+            {
+                "data": [],
+                "status": ,
+                "msg": ""
+            }
+             </pre
+          >
+        </div>
+        <!-- new section start -->
+
+        <!-- new section start -->
+        <div id="add_role_allot">
+          <h1>Add Roll Allot</h1>
+
+          <!--API URL -->
+          <span class="badge badge-danger">POST</span>
+          <span class="mute"> {{domain}}</span>
+          <span>/public-add-role-allot</span>
+
+          <!-- BODY-->
+          <h2>Body</h2>
+          <p class="mute">Form Data</p>
+
+          <!-- INPUT-->
+          <pre>
+            user_id: 
+            user_role_type_id: 4
+            business_id: 105  </pre
+          >
+
+          <h2>Response</h2>
+
+          <!-- DESCRIPTION-->
+          <p class="mute">
+            Creates a new resource. The body of the request should be a JSON
+            object with the resource details.
+          </p>
+
+          <!-- RESPONSE-->
+          <pre>
+               {
+                   "data": [
+                       {
+                           "id": ,
+                           "created_by": ,
+                           "name": "",
+                           "owner": "",
+                           "email": "",
+                           "phone": "",
+                           "address": "",
+                           "state_id": "",
+                           "state_name": "",
+                           "country_id": "",
+                           "country_name": "",
+                           "city": "",
+                           "pincode": "",
+                           "gst_registration": "",
+                           "gst_number": "",
+                           "image": "",
+                           "industry_id": ,
+                           "industry_name": ,
+                           "bill_template": ""
+                       }
+                   ],
+                   "status": ,
+                   "msg": " "
+               }
+             </pre
+          >
+        </div>
+        <!-- new section start -->
+
+        <!-- new section start -->
+        <div id="search_user">
+          <h1>Search User</h1>
+
+          <!--API URL -->
+          <span class="badge badge-danger">POST</span>
+          <span class="mute"> {{domain}}</span>
+          <span>/public-search-users</span>
+
+          <!-- BODY-->
+          <h2>Body</h2>
+          <p class="mute">Form Data</p>
+
+          <!-- INPUT-->
+          <pre>
+            phone:
+            business_id:
+            email:   </pre
+          >
+
+          <h2>Response</h2>
+
+          <!-- DESCRIPTION-->
+          <p class="mute">
+            Creates a new resource. The body of the request should be a JSON
+            object with the resource details.
+          </p>
+
+          <!-- RESPONSE-->
+          <pre>
+            {
+              "data": [
+                  {
+                      "id": ,
+                      "first_name": "",
+                      "last_name": "",
+                      "email": "",
+                      "phone": "",
+                      "plain_phone": "",
+                      "dob": ,
+                      "country_id": ,
+                      "country_name": "",
+                      "address": {}
+                  }
+              ],
+              "status": ,
+              "msg": " "
+          }
+             </pre
+          >
+        </div>
+        <!-- new section start -->
+
+        <!-- new section start -->
+        <div id="signin">
+          <h1>Sign In</h1>
+
+          <!--API URL -->
+          <span class="badge badge-danger">POST</span>
+          <span class="mute"> {{domain}}</span>
+          <span>/sign-in</span>
+
+          <!-- BODY-->
+          <h2>Body</h2>
+          <p class="mute">Form Data</p>
+
+          <!-- INPUT-->
+          <pre>
+              email:  
+              password:  
+            </pre
+          >
+
+          <h2>Response</h2>
+
+          <!-- DESCRIPTION-->
+          <p class="mute">
+            Creates a new resource. The body of the request should be a JSON
+            object with the resource details.
+          </p>
+
+          <!-- RESPONSE-->
+          <pre>
+              {
+                "data": [
+                    {
+                        "id": ,
+                        "first_name": "",
+                        "last_name": "",
+                        "email": "",
+                        "phone": "",
+                        "plain_phone": "",
+                        "dob": ,
+                        "country_id": ,
+                        "country_name": "",
+                        "address": {}
+                    }
+                ],
+                "status": ,
+                "msg": " "
+            }
+               </pre
+          >
+        </div>
+        <!-- new section start -->
+
+        <!-- new section start -->
+        <div id="banners">
+          <h1>Banners</h1>
+
+          <!--API URL -->
+          <span class="badge badge-danger">POST</span>
+          <span class="mute"> {{domain}}</span>
+          <span>/get-public-banner-list</span>
+
+          <!-- BODY-->
+          <h2>Body</h2>
+          <p class="mute">Form Data</p>
+
+          <!-- INPUT-->
+          <pre> business_id :   </pre>
+
+          <h2>Response</h2>
+
+          <!-- DESCRIPTION-->
+          <p class="mute">
+            Creates a new resource. The body of the request should be a JSON
+            object with the resource details.
+          </p>
+
+          <!-- RESPONSE-->
+          <pre>
+            {
+              "data": [
+                  {
+                      "id": ,
+                      "created_by_id": ,
+                      "business_id": ,
+                      "banner_title": "",
+                      "seq_no": ,
+                      "link_url": "",
+                      "description": "",
+                      "status": "",
+                      "image": ":"
+                  },
+                  {
+                      "id": ,
+                      "created_by_id": ,
+                      "business_id": ,
+                      "banner_title": " ",
+                      "seq_no": ,
+                      "link_url": "",
+                      "description": "",
+                      "status": "",
+                      "image": ""
+                  }
+              ],
+              "status": ,
+              "msg": " "
+          }
+             </pre
+          >
+        </div>
+        <!-- new section start -->
+
+        <!-- new section start -->
+        <div id="seo">
+          <h1>Seo List</h1>
+
+          <!--API URL -->
+          <span class="badge badge-danger">POST</span>
+          <span class="mute"> {{domain}}</span>
+          <span>/get-public-seo-list</span>
+
+          <!-- BODY-->
+          <h2>Body</h2>
+          <p class="mute">Form Data</p>
+
+          <!-- INPUT-->
+          <pre> business_id :   </pre>
+
+          <h2>Response</h2>
+
+          <!-- DESCRIPTION-->
+          <p class="mute">
+            Creates a new resource. The body of the request should be a JSON
+            object with the resource details.
+          </p>
+
+          <!-- RESPONSE-->
+          <pre>
+            {
+              "data": [
+                  {
+                      "id": ,
+                      "business_id": ,
+                      "link_name": "",
+                      "status": "",
+                      "status_name": "",
+                      "meta_title": "  ",
+                      "meta_discription": "<p></p>",
+                      "icon": ,
+                      "link": 
+                  }
+              ],
+              "status": ,
+              "msg": " "
+          }
+             </pre>
+        </div>
+        <!-- new section start -->
+
+        <!-- new section start -->
+        <div id="pages">
+          <h1>Stories</h1>
+
+          <!--API URL -->
+          <span class="badge badge-danger">POST</span>
+          <span class="mute"> {{domain}}</span>
+          <span>/get-public-pages-list</span>
+
+          <!-- BODY-->
+          <h2>Body</h2>
+          <p class="mute">Form Data</p>
+
+          <!-- INPUT-->
+          <pre>
+            business_id:2
+            type:1 
+           </pre
+          >
+
+          <h2>Response</h2>
+
+          <!-- DESCRIPTION-->
+          <p class="mute">
+            Creates a new resource. The body of the request should be a JSON
+            object with the resource details.
+          </p>
+
+          <!-- RESPONSE-->
+          <pre>
+            {
+              "data": [
+                  {
+                      "id": ,
+                      "business_id": ,
+                      "business_name": "  ",
+                      "page_title": "",
+                      "seq_no": ,
+                      "featured": "",
+                      "description": "",
+                      "status": "",
+                      "image": ,
+                      "menu_id": ,
+                      "menu_name": ,
+                      "project_id": ,
+                      "project_name": ,
+                      "type": "",
+                      "type_name": "",
+                      "link": ,
+                      "board": 
+                  },
+              ],
+              "status": ,
+              "msg": " "
+          }
+             </pre
+          >
+        </div>
+        <!-- new section start -->
+        <div id="feedback">
+          <h1>Feedback</h1>
+
+          <!--API URL -->
+          <span class="badge badge-danger">POST</span>
+          <span class="mute"> {{domain}}</span>
+          <span>/get-public-feedback-list</span>
+
+          <!-- BODY-->
+          <h2>Body</h2>
+          <p class="mute">Form Data</p>
+
+          <!-- INPUT-->
+          <pre>
+            business_id:
+          
+           </pre
+          >
+
+          <h2>Response</h2>
+
+          <!-- DESCRIPTION-->
+          <p class="mute">
+            Creates a new resource. The body of the request should be a JSON
+            object with the resource details.
+          </p>
+
+          <!-- RESPONSE-->
+          <pre>
+            {
+              "data": [
+                  {
+                      "id": ,
+                      "business_id": ,
+                      "rating_type": "",
+                      "rating_type_name": "",
+                      "status": "",
+                      "name": "",
+                      "mobile_number": "",
+                      "email": ""
+                  }
+              ],
+              "status": ,
+              "msg": " "
+          }
+             </pre
+          >
+        </div>
+
+        <!-- new section start -->
+        <div id="addresslist">
+          <h1>Address List</h1>
+
+          <!--API URL -->
+          <span class="badge badge-danger">POST</span>
+          <span class="mute"> {{domain}}</span>
+          <span>/get-public-feedback-list</span>
+
+          <!-- BODY-->
+          <h2>Body</h2>
+          <p class="mute">Form Data</p>
+
+          <!-- INPUT-->
+          <pre>
+            
+            business_id:8
+           
+            user_id:146
+          
+           </pre
+          >
+          <h2>Authorization</h2>
+
+          <!-- DESCRIPTION-->
+          <p class="mute">Token : {{token}}</p>
+          <h2>Response</h2>
+
+          <!-- DESCRIPTION-->
+          <p class="mute">
+            Creates a new resource. The body of the request should be a JSON
+            object with the resource details.
+          </p>
+
+          <!-- RESPONSE-->
+          <pre>
+            {
+              "data": [
+                  {
+                      "id": ,
+                      "created_by_id": ,
+                      "user_id": ,
+                      "business_id": ,
+                      "address_name": "",
+                      "address_details": " ",
+                      "city": "",
+                      "state_id": "",
+                      "state_name": " ",
+                      "country_id": "",
+                      "country_name": "",
+                      "lat_val": ,
+                      "long_val": ,
+                      "set_default": ""
+                  }
+              ],
+              "status": ,
+              "msg": " "
+          }
+             </pre
+          >
+        </div>
+        <!-- new section start -->
+        <div id="changepassword">
+          <h1>Change Password</h1>
+
+          <!--API URL -->
+          <span class="badge badge-danger">POST</span>
+          <span class="mute"> {{domain}}</span>
+          <span>/change-password</span>
+
+          <!-- BODY-->
+          <h2>Body</h2>
+          <p class="mute">Form Data</p>
+
+          <!-- INPUT-->
+          <pre>
+              
+            old_password:Kano@1234
+
+            new_password:Kano@123
+
+            confirm_password:Kano@123
+            
+             </pre
+          >
+          <h2>Authorization</h2>
+
+          <!-- DESCRIPTION-->
+          <p class="mute">Token : {{token}}</p>
+          <h2>Response</h2>
+
+          <!-- DESCRIPTION-->
+          <p class="mute">
+            Creates a new resource. The body of the request should be a JSON
+            object with the resource details.
+          </p>
+
+          <!-- RESPONSE-->
+          <pre>
+             {
+            "data": [],
+            "status": ,
+            "msg": "  "
+             }
+               </pre
+          >
+        </div>
+
+        <div id="category_details">
+          <h1>Category Details</h1>
+
+          <!--API URL -->
+          <span class="badge badge-danger">POST</span>
+          <span class="mute"> {{domain}}</span>
+          <span>/get-public-category-details-list</span>
+
+          <!-- BODY-->
+          <h2>Body</h2>
+          <p class="mute">Form Data</p>
+
+          <!-- INPUT-->
+          <pre> business_id :   </pre>
+
+          <h2>Response</h2>
+
+          <!-- DESCRIPTION-->
+          <p class="mute">
+            Creates a new resource. The body of the request should be a JSON
+            object with the resource details.
+          </p>
+
+          <!-- RESPONSE-->
+          <pre>
+            {
+                "data": {
+                    "category": [
+                        {
+                            "id": ,
+                            "name": " ",
+                            "parent_id": ,
+                            "parent_category_name": " ",
+                            "created_by": ,
+                            "business_id": ,
+                            "ordering": ,
+                            "status": "",
+                            "status_name": "",
+                            "image": "",
+                            "product_details": [
+                                {
+                                    "id": ,
+                                    "created_by": ,
+                                    "business_id": ,
+                                    "name": "",
+                                    "category_ids": [
+                                        {
+                                            "id": ,
+                                            "product_id": ,
+                                            "category_id": ,
+                                            "category_name": " "
+                                        }
+                                    ],
+                                    "selling_price": ,
+                                    "purchase_price": ,
+                                    "mrp": ,
+                                    "discount": ,
+                                    "unit_id": ,
+                                    "unit_name": "",
+                                    "unit_code": " ",
+                                    "tax_id": ,
+                                    "hsn_code": "",
+                                    "tax_rate": ,
+                                    "barcode_number": "",
+                                    "status": "",
+                                    "cast_id": ,
+                                    "cast_name": ,
+                                    "description": "<p></p>",
+                                    "product_images": [],
+                                    "product_variant": []
+                                }
+                            ]
+                        },
+                        {
+                            "id": ,
+                            "name": " ",
+                            "parent_id": ,
+                            "parent_category_name": "",
+                            "created_by": ,
+                            "business_id": ,
+                            "ordering": ,
+                            "status": "",
+                            "status_name": "",
+                            "image": "",
+                            "product_details": [
+                                {
+                                    "id": ,
+                                    "created_by": ,
+                                    "business_id": ,
+                                    "name": " ",
+                                    "category_ids": [
+                                        {
+                                            "id": ,
+                                            "product_id": ,
+                                            "category_id": ,
+                                            "category_name": ""
+                                        },
+                                        {
+                                            "id": ,
+                                            "product_id": ,
+                                            "category_id": ,
+                                            "category_name": "    "
+                                        },
+                                        {
+                                            "id": ,
+                                            "product_id": ,
+                                            "category_id": ,
+                                            "category_name": " "
+                                        }
+                                    ],
+                                    "selling_price": ,
+                                    "purchase_price": ,
+                                    "mrp": ,
+                                    "discount": ,
+                                    "unit_id": ,
+                                    "unit_name": "",
+                                    "unit_code": " ",
+                                    "tax_id": ,
+                                    "hsn_code": ,
+                                    "tax_rate": ,
+                                    "barcode_number": "",
+                                    "status": "",
+                                    "cast_id": ,
+                                    "cast_name": ,
+                                    "description": "<p></p>",
+                                    "product_images": [],
+                                    "product_variant": []
+                                }
+                            ]
+                        },
+                    }
+                   "status": ,
+                   "msg": " "
+               }
+             </pre>
+        </div>
+
+
+        <!-- new section start -->
+        <div id="addaddress">
+          <h1>Add Address</h1>
+
+          <!--API URL -->
+          <span class="badge badge-danger">POST</span>
+          <span class="mute"> {{domain}}</span>
+          <span>/addAddress</span>
+
+          <!-- BODY-->
+          <h2>Body</h2>
+          <p class="mute">Form Data</p>
+
+          <!-- INPUT-->
+          <pre>
+                 business_id:
+                 user_id:
+                 address_name: 
+                 address_details: 
+                 city:
+                 country_id:
+                 state_id:
+                 lat_val:
+                 long_val:
+                 set_default:
+             </pre
+          >
+          <h2>Authorization</h2>
+
+          <!-- DESCRIPTION-->
+          <p class="mute">Token : {{token}}</p>
+          <h2>Response</h2>
+
+          <!-- DESCRIPTION-->
+          <p class="mute">
+            Creates a new resource. The body of the request should be a JSON
+            object with the resource details.
+          </p>
+
+          <!-- RESPONSE-->
+          <pre>
+            {
+              "data": {
+                  "id": ,
+                  "created_by_id": ,
+                  "user_id": "",
+                  "business_id": "",
+                  "address_name": " ",
+                  "address_details": " ",
+                  "city": "",
+                  "state_id": "",
+                  "state_name": "",
+                  "country_id": "",
+                  "country_name": "",
+                  "lat_val": "",
+                  "long_val": "",
+                  "set_default": ""
+              },
+              "status": ,
+              "msg": " "
+          }
+
+               </pre
+          >
+        </div>
+        <!-- new section start -->
+        <div id="updateaddress">
+          <h1>Update Address</h1>
+
+          <!--API URL -->
+          <span class="badge badge-danger">POST</span>
+          <span class="mute"> {{domain}}</span>
+          <span>/editAddress</span>
+
+          <!-- BODY-->
+          <h2>Body</h2>
+          <p class="mute">Form Data</p>
+
+          <!-- INPUT-->
+          <pre>
+           
+            address_id:
+            user_id:
+            business_id:
+            address_name: 
+            address_details: 
+            city:
+            state_id:
+            lat_val:
+            long_val:
+            set_default:
+
+             </pre
+          >
+          <h2>Authorization</h2>
+
+          <!-- DESCRIPTION-->
+          <p class="mute">Token : {{token}}</p>
+          <h2>Response</h2>
+
+          <!-- DESCRIPTION-->
+          <p class="mute">
+            Creates a new resource. The body of the request should be a JSON
+            object with the resource details.
+          </p>
+
+          <!-- RESPONSE-->
+          <pre>
+           {
+             "status": ,
+             "msg": "  .",
+             "data": []
+           }
+
+               </pre
+          >
+        </div>
+      </div>
+
+      <div class="col-md-3 sticky">
+        <h3>Home page</h3>
+        <div class="row">
+          <div
+            class="col-md-2"
+            style="background: rgb(163, 163, 163); height: 30px"
+          >
+            <i class="fa-solid fa-bars"></i>
+          </div>
+          <div
+            class="col-md-5"
+            style="background: rgb(163, 163, 163); height: 30px"
+          >
+            <p>Business Name</p>
+          </div>
+          <div
+            class="col-md-5"
+            style="background: rgb(163, 163, 163); height: 30px"
+          >
+            <p>Join Us</p>
+          </div>
+        </div>
+        <div class="row">
+          <div
+            class="col-12"
+            style="background: rgb(255, 156, 156); height: 100px"
+          >
+            <a href="#banners">Banner</a>
+          </div>
+        </div>
+        <div class="row">
+          <div
+            class="col-12"
+            style="background: rgb(183, 163, 255); height: 300px"
+          >
+            <a href="#pages">Stories</a>
+          </div>
+        </div>
+        <div class="row">
+          <div
+            class="col-md-3"
+            style="background: rgb(202, 255, 188); height: 30px"
+          >
+            <p>Home</p>
+          </div>
+          <div
+            class="col-md-3"
+            style="background: rgb(202, 255, 188); height: 30px"
+          >
+            <p>Services</p>
+          </div>
+          <div
+            class="col-md-3"
+            style="background: rgb(202, 255, 188); height: 30px"
+          >
+            <p>Starups</p>
+          </div>
+          <div
+            class="col-md-3"
+            style="background: rgb(202, 255, 188); height: 30px"
+          >
+            <p>Events</p>
+          </div>
+        </div>
+        <div class="row"><h3>Stories page</h3></div>
+        <div class="row"><h3>Services page</h3></div>
+        <div class="row"><h3>Events page</h3></div>
+        <div class="row"><h3>Join us page</h3></div>
+        <div class="row"><h3>Contact page</h3></div>
+      </div>
+    </div>
+  </body>
+</html>
